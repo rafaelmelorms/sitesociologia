@@ -77,10 +77,19 @@ header .banner {
 
 .painel-lateral a { color: lightblue; padding: 10px;}
 
+/* -----------------------------
+    html, body (configuração para footer fixo)
+ ----------------------------- */
+html, body {height:100%;}
 
 /* -----------------------------
-    Main (Conteúdo Principal)
+    Main, geral (Conteúdo Principal)
  ----------------------------- */
+ .geral {
+   min-height:100%;
+   position:relative;
+ }
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -109,4 +118,38 @@ main .content-container p {
 img {
   width: 100%;
   margin-top: 18px;
+  margin-bottom: 20px;
+}
+
+/* -----------------------------
+    rodape (Conteúdo do rodape)
+ ----------------------------- */
+
+.rodape {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  background: rgb(125,126,125);
+  background: -moz-linear-gradient(top, rgb(125,126,125) 0%, rgb(14,14,14) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(125,126,125)), color-stop(100%,rgb(14,14,14)));
+  background: -webkit-linear-gradient(top, rgb(125,126,125) 0%,rgb(14,14,14) 100%);
+  background: -o-linear-gradient(top, rgb(125,126,125) 0%,rgb(14,14,14) 100%);
+  background: -ms-linear-gradient(top, rgb(125,126,125) 0%,rgb(14,14,14) 100%);
+  background: linear-gradient(to bottom, rgb(125,126,125) 0%,rgb(14,14,14) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 );
+  padding-top: 30px;
+  margin-top: 2px;
+
+}
+
+.rodape p{
+  text-align: center;
+  padding-bottom: 25px;
+  color: #fff;
+  font-family: 'Roboto', 'Century Gothic', sans-serif;
+}
+
+.rodape a{
+  text-decoration: none;
+  color: #fff
 }
