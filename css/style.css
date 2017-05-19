@@ -3,11 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto'); /* Fonte para conteúdo */
 @import url('https://fonts.googleapis.com/css?family=Josefin+Slab'); /* Fonte para Títulos */
 
-
 /* ----- RESET DO ESTILO ------*/
-::-webkit-scrollbar {
-  display: none;
-}
 
 * {
   margin: 0;
@@ -37,8 +33,6 @@
     background: rgba(28, 28, 28, 0.7);
     position: fixed;
 }
-
-
 
 .menu-principal ul {
     list-style: none;
@@ -131,7 +125,7 @@ main {
 
 main .content-container {
   padding: 10px;
-  width: 320px;
+  width: 305px;
 }
 
 main .content-container h1 {
@@ -147,7 +141,7 @@ main .content-container p {
   text-align: center;
 }
 
-img {
+.content-container img {
   width: 100%;
   margin-top: 18px;
   margin-bottom: 20px;
