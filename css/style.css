@@ -19,9 +19,14 @@
 /* ==================== MENU (NAV) ====================*/
 /* ======= LOGO ======= */
 .menu-principal .logo {
-    color: white;
-    margin: 7px 0 0 70px;
-    font-size: 30px;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  font-size: 1.3em;
+  line-height: 37px;
+  text-indent: 55px;
+  margin: 7px 0 0 70px;
+  background: url("../img/logo-sociologia.png") no-repeat center / 40px;
 }
 
 /* ====== NAVEGAÇÃO ====== */
