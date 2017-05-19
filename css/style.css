@@ -20,16 +20,47 @@
   box-sizing: border-box;
 }
 
-/*
-  [ AQUI VEM O ESTILO DO MENU ]
-  [ AQUI VEM O ESTILO DO MENU ]
-  [ AQUI VEM O ESTILO DO MENU ]
-  [ AQUI VEM O ESTILO DO MENU ]
-  [ AQUI VEM O ESTILO DO MENU ]
-  [ AQUI VEM O ESTILO DO MENU ]
-  [ AQUI VEM O ESTILO DO MENU ]
-  [ AQUI VEM O ESTILO DO MENU ]
-*/
+/* ==================== MENU (NAV) ====================*/
+/* ======= LOGO ======= */
+.menu-principal .logo {
+    color: white;
+    margin: 7px 0 0 70px;
+    font-size: 30px;
+}
+
+/* ====== NAVEGAÇÃO ====== */
+.menu-principal {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background: rgba(28, 28, 28, 0.7);
+    position: fixed;
+}
+
+
+
+.menu-principal ul {
+    list-style: none;
+    display: flex;
+    line-height: 50px;
+}
+
+.menu-principal ul a {
+    color: #fff;
+    display: block;
+    text-align: center;
+    background: rgba(28, 28, 28, 0.4);
+}
+
+.menu-principal ul li {
+    width: 150px;
+}
+
+.menu-principal ul a:hover{
+    color: darkgray;
+    background-color: rgba(0, 0, 0, 0.7);
+}
 
 /* ==================== CABEÇALHO (HEADER) ====================*/
 
@@ -87,7 +118,8 @@ html, body {height:100%;}
  ----------------------------- */
  .geral {
    min-height:100%;
-   position:relative;
+   display: flex;
+   flex-direction: column;
  }
 
 main {
@@ -126,7 +158,7 @@ img {
  ----------------------------- */
 
 .rodape {
-  position:absolute;
+  display: block;
   bottom:0;
   width:100%;
   background: rgb(125,126,125);
