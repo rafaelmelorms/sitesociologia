@@ -37,6 +37,7 @@
     height: 50px;
     background: rgba(28, 28, 28, 0.7);
     position: fixed;
+    z-index: 1;
 }
 
 .menu-principal ul {
@@ -50,6 +51,7 @@
     display: block;
     text-align: center;
     background: rgba(28, 28, 28, 0.4);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 .menu-principal ul li {
@@ -145,6 +147,7 @@ main .content-container p {
   color: #4d4e51;
   position: relative;
   text-align: center;
+  z-index: 0;
 }
 
 /* ------ Efeito fade out parágrafo ------- */
