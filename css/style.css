@@ -39,6 +39,7 @@
     height: 70px;
     background: rgba(28, 28, 28, 0.3);
     position: fixed;
+    z-index: 1;
     transition: all 0.7s;
     z-index: 1;
 }
@@ -58,6 +59,8 @@
     color: #fff;
     display: block;
     text-align: center;
+    background: rgba(28, 28, 28, 0.4);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 .menu-principal ul li {
@@ -120,14 +123,52 @@ header .banner {
 
 .painel-lateral a { color: lightblue; padding: 10px;}
 
-/* -----------------------------
+/* -----------------------------------------------
     html, body (configuração para footer fixo)
- ----------------------------- */
+ ------------------------------------------------- */
 html, body {height:100%;}
 
-/* -----------------------------
+/* -----------------------------------------------
+    Container do ícone de chamada para scroll
+ ----------------------------------------------- */
+.scroll-icon-container {
+  width: 100%;
+  padding: 17px;
+  display: flex;
+  justify-content: center;
+}
+/* -----------------------------------------------
+                      Mouse
+ ----------------------------------------------- */
+.mouse {
+  width: 50px;
+  height: 70px;
+  position: relative;
+  border-radius: 20px;
+  border: 4px solid #333;
+  -webkit-animation: entrada 0.5s ease-in-out;
+          animation: entrada 0.5s ease-in-out;
+}
+/* -----------------------------------------------
+                Barra de rolagem
+ ----------------------------------------------- */
+.mouse:after {
+  content: "";
+  top: 10px;
+  left: 50%;
+  width: 6px;
+  height: 12px;
+  position: absolute;
+  border-radius: 20px;
+  background-color: #333;
+  transform: translateX(-50%);
+  -webkit-animation: rolldown 1.4s ease-in-out 0.5s infinite;
+          animation: rolldown 1.4s ease-in-out 0.5s infinite;
+}
+
+/* -----------------------------------------------
     Main, geral (Conteúdo Principal)
- ----------------------------- */
+ ----------------------------------------------- */
 .geral {
    min-height:100%;
    display: flex;
@@ -137,7 +178,7 @@ html, body {height:100%;}
 main {
   display: flex;
   flex-wrap: wrap;
-  padding: 70px 30px 20px 30px;
+  padding: 60px 30px 20px 30px;
   justify-content: space-between;
 }
 
@@ -158,6 +199,19 @@ main .content-container p {
   color: #4d4e51;
   position: relative;
   text-align: center;
+  z-index: 0;
+}
+
+/* ------ Efeito fade out parágrafo ------- */
+main .content-container p::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: -webkit-linear-gradient(to bottom, transparent 60%, #fff);
+  background-image: linear-gradient(to bottom, transparent 60%, #fff);
 }
 
 /* ------ Efeito fade out parágrafo ------- */
@@ -209,4 +263,72 @@ main .content-container p:after {
 .rodape a{
   text-decoration: none;
   color: #fff
+}
+
+/* ======================================
+  ************ ANIMAÇÕES ***************
+ ====================================== */
+
+@-webkit-keyframes entrada {
+  0% {
+   transform: scale(0);
+   opacity: 0;
+  }
+
+  80% {
+   transform: scale(1.3);
+  }
+
+  100% {
+   transform: scale(1);
+   opacity: 1;
+  }
+}
+
+@keyframes entrada {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  80% {
+    transform: scale(1.3);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rolldown {
+  0% {
+    opacity: 0.8;
+    top: 10px;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    top: 42px;
+  }
+}
+
+@keyframes rolldown {
+  0% {
+   opacity: 0.8;
+   top: 10px;
+  }
+
+  50% {
+   opacity: 1;
+  }
+
+  100% {
+   opacity: 0;
+   top: 42px;
+  }
 }
