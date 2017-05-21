@@ -266,7 +266,23 @@ main .content-container p:after {
   ************ ANIMAÇÕES ***************
  ====================================== */
 
- @keyframes roll-down {
+ @-webkit-keyframes roll-down {
+    0% {
+      opacity: 0.8;
+      top: 10px;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+      top: 42px;
+    }
+ }
+
+@keyframes roll-down {
    0% {
      opacity: 0.8;
      top: 10px;
@@ -280,4 +296,4 @@ main .content-container p:after {
      opacity: 0;
      top: 42px;
    }
- }
+}
