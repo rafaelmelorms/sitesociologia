@@ -1,49 +1,13 @@
 main {
     padding: 0;
 }
-
+/***************************************************
+******************** TIME-LINE *********************
+***************************************************/
 #time-line {
     width: 100%;
     margin-bottom: 25px;
     margin-top: 90px;
-}
-
-.sociologos {
-    height: 700px;
-    margin: 20px;
-}
-
-.nomes {
-    margin-left: 40%;
-    margin-top: -25px;
-    font-size: 35px;
-}
-
-.sociologos-conteudo {
-    margin-top: -250px;
-    display: flex;
-    width: 100%;
-    justify-content:space-around;
-    align-items: center;
-    filter: blur(3px);
-    z-index: 0;
-    transition: all 0.3s ease-in-out;
-}
-
-.sociologos-conteudo ul {
-    list-style: none;
-    display: flex;
-    height: 444px;
-    text-align: center;
-}
-
-.sociologos-conteudo ul li {
-    width: 100%;
-}
-
-.sociologos-conteudo ul li p {
-    padding: 70px;
-    font-size: 17px;
 }
 
 #linha {
@@ -65,6 +29,48 @@ main {
   transition: all 0.3s ease-in-out;
 }
 
+/***************************************************
+********************* CONTEÚDOS ********************
+***************************************************/
+.sociologos-conteudo {
+    margin-top: -250px;
+    display: flex;
+    width: 100%;
+    justify-content:space-around;
+    align-items: center;
+    filter: blur(3px);
+    z-index: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.sociologos {
+    height: 700px;
+    margin: 20px;
+}
+
+.nomes {
+    margin-left: 30%;
+    margin-top: -25px;
+    font-size: 35px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sociologos-conteudo ul {
+    list-style: none;
+    display: flex;
+    height: 444px;
+    text-align: center;
+}
+
+.sociologos-conteudo ul li {
+    width: 100%;
+}
+
+.sociologos-conteudo ul li p {
+    padding: 70px;
+    font-size: 17px;
+}
+
 .geral-sociologos:hover .bolinha {
     background: #A52A2A;
 }
@@ -80,6 +86,11 @@ main {
 
 .geral-sociologos:hover .titulo{
     transition: all 0.3s ease-in-out;
+}
+
+.geral-sociologos:hover .nomes{
+    font-size: 39px;
+    transition: all 0.6s ease-in-out;
 }
 
 
