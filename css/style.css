@@ -123,14 +123,49 @@ header .banner {
 
 .painel-lateral a { color: lightblue; padding: 10px;}
 
-/* -----------------------------
+/* -----------------------------------------------
     html, body (configuração para footer fixo)
- ----------------------------- */
+ ------------------------------------------------- */
 html, body {height:100%;}
 
-/* -----------------------------
+/* -----------------------------------------------
+    Container do ícone de chamada para scroll
+ ----------------------------------------------- */
+.scroll-icon-container {
+  width: 100%;
+  padding: 17px;
+  display: flex;
+  justify-content: center;
+}
+/* -----------------------------------------------
+                      Mouse
+ ----------------------------------------------- */
+.mouse {
+  width: 50px;
+  height: 70px;
+  position: relative;
+  border-radius: 20px;
+  border: 4px solid #333;
+}
+/* -----------------------------------------------
+                Barra de rolagem
+ ----------------------------------------------- */
+.mouse:after {
+  content: "";
+  top: 10px;
+  left: 50%;
+  width: 6px;
+  height: 12px;
+  position: absolute;
+  border-radius: 20px;
+  background-color: #333;
+  transform: translateX(-50%);
+  animation: roll-down 1.4s ease-in-out infinite;
+}
+
+/* -----------------------------------------------
     Main, geral (Conteúdo Principal)
- ----------------------------- */
+ ----------------------------------------------- */
 .geral {
    min-height:100%;
    display: flex;
@@ -140,7 +175,7 @@ html, body {height:100%;}
 main {
   display: flex;
   flex-wrap: wrap;
-  padding: 70px 30px 20px 30px;
+  padding: 60px 30px 20px 30px;
   justify-content: space-between;
 }
 
@@ -226,3 +261,23 @@ main .content-container p:after {
   text-decoration: none;
   color: #fff
 }
+
+/* ======================================
+  ************ ANIMAÇÕES ***************
+ ====================================== */
+
+ @keyframes roll-down {
+   0% {
+     opacity: 0.8;
+     top: 10px;
+   }
+
+   50% {
+     opacity: 1;
+   }
+
+   100% {
+     opacity: 0;
+     top: 42px;
+   }
+ }
