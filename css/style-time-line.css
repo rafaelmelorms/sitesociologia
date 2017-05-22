@@ -12,15 +12,16 @@ main {
 
 #linha {
     margin-left: 50%;
-    margin-bottom: -2600px;
+    margin-bottom: -2400px;
     margin-top: 90px;
     background-color: #999;
     width: 1px;
-    height: 2600px;
+    height: 2400px;
+    transition: all 0.3s ease-in-out;
 }
 
 .bolinha { 
-  margin-top: 200px;
+  margin-top: 150px;
   background: #828282;
   margin-left: 49.5%;
   border-radius: 100%;
@@ -59,6 +60,10 @@ main {
     transition: all 0.3s ease-in-out;
 }
 
+.sociologos-conteudo img {
+        transition: all 0.3s ease-in-out;
+    }
+
 .sociologos-conteudo ul {
     list-style: none;
     display: flex;
@@ -73,6 +78,7 @@ main {
 .sociologos-conteudo ul li p {
     padding: 70px;
     font-size: 17px;
+    transition: all 0.3s ease-in-out;
 }
 
 .geral-sociologos:hover .bolinha {
@@ -97,4 +103,71 @@ main {
     transition: all 0.6s ease-in-out;
 }
 
+/*****************************************************************************************
+********** MEDIA QUERY 960 (Tablets em formato paisagem e monitores antigos) *************
+******************************************************************************************/
+@media (max-width:960px) {
+    #linha {
+        margin-left: 25px;
+        margin-bottom: -2380px;
+        height: 2380px;
+    }
+    
+    .bolinha {
+        margin-left: 18px;
+    }
+    
+    .sociologos {
+        height: 650px;
+        margin: 5px;
+        margin-left: 40px;
+    }
+       
+    .sociologos-conteudo ul li p {
+        padding: 150px 0 0 0;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .nomes {
+        font-size: 15px;
+    }
+    
+    .geral-sociologos:hover .nomes {
+        font-size: 1.3em;
+    }
+    
+    .sociologos-conteudo img {
+        width: 80%;
+        padding-top: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+    
+}
+
+/*****************************************************************************************
+******************* MEDIA QUERY 768 (Tablets em formato retrato) *************************
+******************************************************************************************/
+@media (max-width:768px) {
+    .sociologos-conteudo ul li p {
+        padding: 80px 0 0 0;
+        transition: all 0.3s ease-in-out;
+    }
+    .sociologos-conteudo img {
+        padding-top: 50px;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+/*****************************************************************************************
+*************** MEDIA QUERY 480 (Smartphones em formato paisagem) ************************
+******************************************************************************************/
+@media (max-width:480px) {
+    .sociologos-conteudo ul li p {
+        padding: 0 5px 0 0;
+        transition: all 0.3s ease-in-out;
+    }
+    .bolinha {
+        margin-top: 200px;  
+    }
+}
 
