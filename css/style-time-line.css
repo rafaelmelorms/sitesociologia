@@ -116,6 +116,10 @@ main {
         height: 2380px; /* AJUSTA O TAMANHO DA LINHA */
     }
     
+    .sociologos-conteudo {
+         filter: none;
+    }
+    
     .bolinha {
         margin-left: 18px; /* POSICINA A BOLINHA NO LADO ESQUERDO DA TELA */
     }
@@ -129,10 +133,6 @@ main {
     .sociologos-conteudo ul li p {
         padding: 150px 0 0 0; /* AJUSTA O ESPAÇO INTERNO DO TEXTO */
         transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
-    }
-    
-    .nomes {
-        font-size: 15px; /* DIMINUA A FONTE DO NOME DOS SOCIOLOGOS */
     }
     
     .geral-sociologos:hover .nomes {
@@ -155,6 +155,11 @@ main {
         padding: 80px 0 0 0; /* AJUSTA O ESPAÇO INTERNO DO TEXTO */
         transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
     }
+    
+    .sociologos-conteudo {
+         filter: none; /* TIRA A OPACIDADE PARA DISPOSITIVOS MÓVEIS */
+    }
+    
     .sociologos-conteudo img {
         padding-top: 50px; /* AJUSTA O ESPAÇO INTERNO NA PARTE DE CIMA DA IMAGEM */
         transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
@@ -169,6 +174,11 @@ main {
         padding: 0 5px 0 0; /* AJUSTA O ESPAÇO INTERNO DO TEXTO */
         transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
     }
+    
+    .sociologos-conteudo {
+         filter: none; /* TIRA A OPACIDADE PARA DISPOSITIVOS MÓVEIS */
+    }
+    
     .bolinha {
         margin-top: 200px; /* AJUSTA A MARGEM DA BOLINHA */ 
     }
