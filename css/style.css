@@ -260,9 +260,7 @@ main .container-read-more .ativador{
 }
 
 main .container-read-more .ativador:checked ~ p { height: 300px; }
-main .container-read-more .ativador:checked ~ p:before {
-  opacity: 0;
-}
+main .container-read-more .ativador:checked ~ p:before { opacity: 0; }
 main .container-read-more .ativador:checked ~ .expandir:before { content: "Esconder" }
 main .container-read-more .ativador:checked ~ .expandir:after { content: "\f146" }
 
