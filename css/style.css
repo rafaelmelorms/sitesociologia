@@ -22,9 +22,9 @@
   border: none;
   outline: none;
   font-size: 100%;
-  font-family: 'Roboto', 'Century Gothic', sans-serif;
   text-decoration: none;
   box-sizing: border-box;
+  font-family: 'Roboto', 'Century Gothic', sans-serif;
 }
 
 /* ==================== MENU (NAV) ====================*/
@@ -44,15 +44,14 @@
 
 /* ====== NAVEGAÇÃO ====== */
 .menu-principal {
-    display: flex;
-    justify-content: space-between;
+    z-index: 1;
     width: 100%;
     height: 50px;
-    background: rgba(28, 28, 28, 0.3);
+    display: flex;
     position: fixed;
-    z-index: 1;
     transition: all 0.7s;
-    z-index: 1;
+    justify-content: space-between;
+    background: rgba(28, 28, 28, 0.3);
 }
 
 .menu-principal:hover {
@@ -61,8 +60,8 @@
 }
 
 .menu-principal ul {
-    list-style: none;
     display: flex;
+    list-style: none;
     line-height: 50px;
 }
 
@@ -80,8 +79,8 @@
 
 .menu-principal ul a:hover{
     color: #D3D3D3;
-    background-color: rgba(75, 75, 75, 0.7);
     border-bottom: 2px solid #D3D3D3;
+    background-color: rgba(75, 75, 75, 0.7);
 }
 
 .menu-principal ul a:active {
@@ -137,7 +136,7 @@ header .banner {
 /* -----------------------------------------------
     html, body (configuração para footer fixo)
  ------------------------------------------------- */
-html, body {height:100%;}
+html, body { height:100%; }
 
 /* -----------------------------------------------
     Container do ícone de chamada para scroll
@@ -194,8 +193,8 @@ main {
 }
 
 main .content-container {
-  padding: 10px;
   width: 305px;
+  padding: 10px;
 }
 
 main .content-container h1 {
@@ -207,10 +206,10 @@ main .content-container h1 {
 }
 
 main .content-container p {
-  color: #4d4e51;
-  position: relative;
-  text-align: center;
   z-index: 0;
+  color: #4d4e51;
+  text-align: center;
+  position: relative;
 }
 
 /* ------ Efeito fade out parágrafo ------- */
@@ -218,11 +217,11 @@ main .content-container p::after {
   content: "";
   width: 100%;
   height: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 0;
   background-image: -webkit-linear-gradient(to bottom, transparent 60%, #fff);
   background-image: linear-gradient(to bottom, transparent 60%, #fff);
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 /* ------ Efeito fade out parágrafo ------- */
@@ -230,11 +229,11 @@ main .content-container p:after {
   content: "";
   width: 100%;
   height: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 0;
   background-image: -webkit-linear-gradient(to bottom, transparent 60%, #fff);
   background-image: linear-gradient(to bottom, transparent 60%, #fff);
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .content-container img {
@@ -248,32 +247,28 @@ main .content-container p:after {
  ----------------------------- */
 
 .rodape {
-  display: block;
-  bottom:0;
   width:100%;
+  display: block;
   background: rgb(125,126,125);
-  background: -moz-linear-gradient(top, rgb(125,126,125) 0%, rgb(14,14,14) 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(125,126,125)), color-stop(100%,rgb(14,14,14)));
-  background: -webkit-linear-gradient(top, rgb(125,126,125) 0%,rgb(14,14,14) 100%);
   background: -o-linear-gradient(top, rgb(125,126,125) 0%,rgb(14,14,14) 100%);
   background: -ms-linear-gradient(top, rgb(125,126,125) 0%,rgb(14,14,14) 100%);
+  background: -moz-linear-gradient(top, rgb(125,126,125) 0%, rgb(14,14,14) 100%);
+  background: -webkit-linear-gradient(top, rgb(125,126,125) 0%,rgb(14,14,14) 100%);
   background: linear-gradient(to bottom, rgb(125,126,125) 0%,rgb(14,14,14) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 );
   padding-top: 30px;
   margin-top: 2px;
-
 }
 
-.rodape p{
+.rodape p {
+  color: #fff;
   text-align: center;
   padding-bottom: 25px;
-  color: #fff;
-  font-family: 'Roboto', 'Century Gothic', sans-serif;
 }
 
-.rodape a{
-  text-decoration: none;
-  color: #fff
+.rodape a {
+  color: #fff;
 }
 
 /* ======================================
