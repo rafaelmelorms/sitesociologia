@@ -183,7 +183,7 @@ html, body { height:100%; }
    min-height:100%;
    display: flex;
    flex-direction: column;
- }
+}
 
 main {
   display: flex;
@@ -197,7 +197,15 @@ main .content-container {
   padding: 10px;
 }
 
-main .content-container h1 {
+main .container-read-more {
+  position: relative;
+}
+
+main .container-read-more .ativador{
+  display: none;
+}
+
+main .container-read-more h1 {
   color: #353638;
   font-size: 1.5em;
   text-align: center;
@@ -205,35 +213,45 @@ main .content-container h1 {
   font-family: 'Josefin Slab', serif;
 }
 
-main .content-container p {
+main .container-read-more p {
   z-index: 0;
   color: #4d4e51;
   text-align: center;
   position: relative;
+  height: 132px;
 }
 
 /* ------ Efeito fade out parágrafo ------- */
-main .content-container p::after {
+main .container-read-more p:before {
   content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background-image: -webkit-linear-gradient(to bottom, transparent 60%, #fff);
-  background-image: linear-gradient(to bottom, transparent 60%, #fff);
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  background-image: -webkit-linear-gradient(to bottom, transparent 20%, #fff 72%);
+  background-image:         linear-gradient(to bottom, transparent 20%, #fff 72%);
 }
 
-/* ------ Efeito fade out parágrafo ------- */
-main .content-container p:after {
-  content: "";
+main .container-read-more .expandir{
   width: 100%;
-  height: 100%;
-  background-image: -webkit-linear-gradient(to bottom, transparent 60%, #fff);
-  background-image: linear-gradient(to bottom, transparent 60%, #fff);
+  display: block;
+  text-align: center;
+  bottom: 4%;
   position: absolute;
-  bottom: 0;
-  left: 0;
+  cursor: pointer;
+}
+
+main .container-read-more .expandir:before{
+  content: "Leia mais";
+  font-weight: bolder;
+  color: #333;
+}
+
+main .container-read-more .expandir:after{
+  content: "\f0fe";
+  font-family: "FontAwesome";
+  margin-left: 8px;
 }
 
 .content-container img {
