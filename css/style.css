@@ -1,7 +1,18 @@
 /* ------------ Importando fontes Google Fontes ------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Roboto'); /* Fonte para conteúdo */
-@import url('https://fonts.googleapis.com/css?family=Josefin+Slab'); /* Fonte para Títulos */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/google-fonts/Roboto/Roboto-Regular.ttf");
+  src: url("../fonts/google-fonts/Roboto/Roboto-Regular.ttf") format("ttf");
+  src: url("../fonts/google-fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Josefin Slab";
+  src: url("../fonts/google-fonts/Josefin_Slab/JosefinSlab-Regular.ttf");
+  src: url("../fonts/google-fonts/Josefin_Slab/JosefinSlab-Regular.ttf") format("ttf");
+  src: url("../fonts/google-fonts/Josefin_Slab/JosefinSlab-Regular.ttf") format("truetype");
+}
 
 /* ----- RESET DO ESTILO ------*/
 
