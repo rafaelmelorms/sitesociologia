@@ -201,10 +201,6 @@ main .container-read-more {
   position: relative;
 }
 
-main .container-read-more .ativador{
-  display: none;
-}
-
 main .container-read-more h1 {
   color: #353638;
   font-size: 1.5em;
@@ -218,7 +214,10 @@ main .container-read-more p {
   color: #4d4e51;
   text-align: center;
   position: relative;
+  overflow: hidden;
   height: 132px;
+  -webkit-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
 }
 
 /* ------ Efeito fade out parágrafo ------- */
@@ -230,16 +229,18 @@ main .container-read-more p:before {
   width: 100%;
   height: 100%;
   background-image: -webkit-linear-gradient(to bottom, transparent 20%, #fff 72%);
-  background-image:         linear-gradient(to bottom, transparent 20%, #fff 72%);
+  background-image: linear-gradient(to bottom, transparent 20%, #fff 72%);
+  -webkit-transition: all .2s ease-in-out 0.1s;
+  transition: all .2s ease-in-out 0.1s;
 }
 
 main .container-read-more .expandir{
   width: 100%;
   display: block;
   text-align: center;
-  bottom: 4%;
   position: absolute;
   cursor: pointer;
+  bottom: 4%;
 }
 
 main .container-read-more .expandir:before{
@@ -250,9 +251,20 @@ main .container-read-more .expandir:before{
 
 main .container-read-more .expandir:after{
   content: "\f0fe";
-  font-family: "FontAwesome";
   margin-left: 8px;
+  font-family: "FontAwesome";
 }
+
+main .container-read-more .ativador{
+  display: none;
+}
+
+main .container-read-more .ativador:checked ~ p { height: 300px; }
+main .container-read-more .ativador:checked ~ p:before {
+  opacity: 0;
+}
+main .container-read-more .ativador:checked ~ .expandir:before { content: "Esconder" }
+main .container-read-more .ativador:checked ~ .expandir:after { content: "\f146" }
 
 .content-container img {
   width: 100%;
