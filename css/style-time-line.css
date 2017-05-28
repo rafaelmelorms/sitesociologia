@@ -143,6 +143,8 @@ main {
     
     .bolinha {
         margin-left: 18px; /* POSICINA A BOLINHA NO LADO ESQUERDO DA TELA */
+        background: #A52A2A; 
+    }
     }
     
     .sociologos {

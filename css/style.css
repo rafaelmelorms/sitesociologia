@@ -103,6 +103,22 @@
     visibility: visible;
 }
 
+/* ==================== BOTÃO DO MENU RESPONSIVO ====================*/
+label[for="botao-menu"] {
+    padding: 3px 50px 0 30px;
+    color: #fff;
+    font-family: "Arial";
+    text-align: right;
+    font-size: 30px;
+    cursor: pointer;
+    height: 47px;
+    display: none;
+}
+
+#botao-menu {
+    display: none;
+}
+
 /* ==================== CABEÇALHO (HEADER) ====================*/
 
 header {
@@ -381,4 +397,64 @@ main .container-read-more .ativador:checked ~ .expandir:after { content: "\f146"
    opacity: 0;
    top: 42px;
   }
+}
+
+/*****************************************************************************************
+********** MEDIA QUERY 960 (Tablets em formato paisagem e monitores antigos) *************
+******************************************************************************************/
+@media (max-width:960px) {
+    label[for="botao-menu"] {
+        display: block;
+    }
+    
+    .menu-principal ul {
+        margin-top: 50px;
+        position: absolute;
+        flex-direction: column;
+    }
+    
+    #menu {
+        left: -150%;
+        transition: all 0.7s;
+    }
+    
+    #botao-menu:checked ~ #menu {
+        left: 0;
+        transition: all 0.7s;
+    }
+    
+    .menu-principal ul li {
+        background-color: rgba(25, 25, 25, 0.8);
+        width: 200px;
+    }
+    
+    .menu-principal {
+    background: black;
+    transition: all 0.7s;
+    }
+    
+    .menu-principal ul ul {
+    display: none;
+    }
+    
+    .menu-principal ul a:hover {
+    border-bottom: none;
+    }
+    
+}
+
+
+/*****************************************************************************************
+******************* MEDIA QUERY 768 (Tablets em formato retrato) *************************
+******************************************************************************************/
+@media (max-width:768px) {
+    
+}
+
+
+/*****************************************************************************************
+*************** MEDIA QUERY 480 (Smartphones em formato paisagem) ************************
+******************************************************************************************/
+@media (max-width:480px) {
+    
 }
