@@ -14,11 +14,11 @@ main {
 /*********** LINHA DA TIMELINE ***********/
 #linha {
     margin-left: 50%; /* COLOCA A LINHA NO CENTRO */
-    margin-bottom: -2400px; /* RECUA A LINHA NO MESMO VALOR DO SEU TAMANHO, PARA QUE ELA FIQUE SOBRE OS OUTROS CONTEÚDOS */
+    margin-bottom: -2200px; /* RECUA A LINHA NO MESMO VALOR DO SEU TAMANHO, PARA QUE ELA FIQUE SOBRE OS OUTROS CONTEÚDOS */
     margin-top: 90px;
     background-color: #999;
     width: 1px; /* ESPESSURA DA LINHA */
-    height: 2400px; /* TAMANHO DA LINHA */
+    height: 2200px; /* TAMANHO DA LINHA */
     transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO SUAVE QUANDO OCORRE O MEDIAQUERY */
 }
 
@@ -46,7 +46,7 @@ main {
 }
 
 .sociologos-conteudo {
-    margin-top: -250px; /* RECUA O CONTEUDO PARA O TOPO */
+    margin-top: -300px; /* RECUA O CONTEUDO PARA O TOPO */
     display: flex;
     width: 100%;
     justify-content:space-around; /* SEPARA A IMAGEM DO TEXTO COM ESPAÇO EM VOLTA */
@@ -63,9 +63,13 @@ main {
     transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
 }
 
+.nomes span {
+    font-size: 15px;
+}
+
 .sociologos-conteudo img {
-        transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
-    }
+    transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
+}
 
 .sociologos-conteudo ul {
     list-style: none; /* TIRA O ESTILO DA LISTA (OS PONTINHOS)*/
@@ -93,11 +97,12 @@ main {
     transition: all 0.3s; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
 }
 
-.titulo {
-    transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
+.texto {
+    transition: all 0.3s ease-in-out;
+    padding-top: 80px;/* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
 }
 
-.geral-sociologos:hover .titulo{
+.geral-sociologos:hover .texto{
     transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
 }
 
@@ -106,14 +111,30 @@ main {
     transition: all 0.6s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
 }
 
+.texto #leia-mais {
+    float: right;
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.texto #leia-mais:hover {
+    color: #A52A2A;
+}
+
 /*****************************************************************************************
 ********** MEDIA QUERY 960 (Tablets em formato paisagem e monitores antigos) *************
 ******************************************************************************************/
 @media (max-width:960px) {
     #linha {
         margin-left: 25px; /* AJUSTA A LINHA PARA O LADO ESQUEDO DA TELA QUANDO DIMINUE A TELA */
-        margin-bottom: -2380px; /* AJUSTA O TAMANHO DA LINHA */
-        height: 2380px; /* AJUSTA O TAMANHO DA LINHA */
+        margin-bottom: -2170px; /* AJUSTA O TAMANHO DA LINHA */
+        height: 2170px; /* AJUSTA O TAMANHO DA LINHA */
     }
     
     .sociologos-conteudo {
@@ -134,15 +155,30 @@ main {
         padding: 150px 0 0 0; /* AJUSTA O ESPAÇO INTERNO DO TEXTO */
         transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
     }
-    
-    .geral-sociologos:hover .nomes {
-        font-size: 1.3em; /* AUMENTA UM POUCO O NOME DOS SOCIOLOGOS QUANDO PASSA O MOUSE POR CIMA DO CONTEÚDO */
-    }
-    
+       
     .sociologos-conteudo img {
         width: 80%; /* AJUSTA A IMAGEM PARA 80% EM RELAÇÃO AO ESPAÇO DA DIV */
         padding-top: 20px; /* CRIA UM ESPAÇO INTERNO NA PARTE DE CIMA DA IMAGEM */
         transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
+    }
+    
+    .texto {
+    transition: all 0.3s ease-in-out;
+    padding-top: 40px;/* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
+    }
+    
+    .nomes {
+    font-size: 25px; /* TAMANHO DA FONTE */
+    transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
+    }
+    
+    .geral-sociologos:hover .nomes{
+    font-size: 25px; transition: all 0.6s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
+    }
+
+    .nomes span {
+    font-size: 12px;
+    transition: all 0.3s ease-in-out;
     }
     
 }
@@ -151,6 +187,11 @@ main {
 ******************* MEDIA QUERY 768 (Tablets em formato retrato) *************************
 ******************************************************************************************/
 @media (max-width:768px) {
+    #linha {
+        margin-bottom: -2370px; /* AJUSTA O TAMANHO DA LINHA */
+        height: 2370px; /* AJUSTA O TAMANHO DA LINHA */
+    }
+    
     .sociologos-conteudo ul li p {
         padding: 80px 0 0 0; /* AJUSTA O ESPAÇO INTERNO DO TEXTO */
         transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
@@ -161,9 +202,27 @@ main {
     }
     
     .sociologos-conteudo img {
-        padding-top: 50px; /* AJUSTA O ESPAÇO INTERNO NA PARTE DE CIMA DA IMAGEM */
+        padding-top: 80px; /* AJUSTA O ESPAÇO INTERNO NA PARTE DE CIMA DA IMAGEM */
         transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
     }
+    .texto {
+    transition: all 0.3s ease-in-out;
+    padding-top: 5px;/* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
+    }
+    
+    .sociologos {
+        height: 700px; /* DIMINUE O TAMANHO DA ÁREA DO CONTEÚDO */
+    }
+       
+    .nomes {
+    font-size: 18px; /* TAMANHO DA FONTE */
+    transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
+    }
+    
+    .geral-sociologos:hover .nomes{
+    font-size: 18px; transition: all 0.6s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
+    }
+    
 }
 
 /*****************************************************************************************
@@ -182,5 +241,24 @@ main {
     .bolinha {
         margin-top: 200px; /* AJUSTA A MARGEM DA BOLINHA */ 
     }
+    
+    .nomes {
+    font-size: 18px; /* TAMANHO DA FONTE */
+    transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
+    }
+    
+    .geral-sociologos:hover .nomes{
+    font-size: 18px; transition: all 0.6s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
+    }
+    
+    .sociologos {
+        height: 700px; /* DIMINUE O TAMANHO DA ÁREA DO CONTEÚDO */
+    }
+    
+    #linha {
+        margin-bottom: -2570px; /* AJUSTA O TAMANHO DA LINHA */
+        height: 2570px; /* AJUSTA O TAMANHO DA LINHA */
+    }
 }
+
 

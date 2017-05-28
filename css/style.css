@@ -42,7 +42,7 @@
 }
 
 
-/* ====== NAVEGAÇÃO ====== */
+/* ====== NAVEGAÇÃO - MENU PRINCIPAL ====== */
 .menu-principal {
     z-index: 1;
     width: 100%;
@@ -85,6 +85,22 @@
 
 .menu-principal ul a:active {
     background-color: rgba(150, 150, 150, 0.7);
+}
+
+#link-sociologos {
+    border-bottom: none;
+}
+
+/* ====== NAVEGAÇÃO - SUBMENU SOCIÓLOGOS ====== */
+.menu-principal ul ul {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(25, 25, 25, 0.9);
+    visibility: hidden;
+}
+
+.menu-principal ul li:hover ul {
+    visibility: visible;
 }
 
 /* ==================== CABEÇALHO (HEADER) ====================*/
@@ -285,7 +301,7 @@ main .container-read-more .ativador:checked ~ .expandir:after { content: "\f146"
   background: -webkit-linear-gradient(top, rgb(125,126,125) 0%,rgb(14,14,14) 100%);
   background: linear-gradient(to bottom, rgb(125,126,125) 0%,rgb(14,14,14) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 );
-  padding-top: 30px;
+  padding-top: 20px;
   margin-top: 2px;
 }
 
