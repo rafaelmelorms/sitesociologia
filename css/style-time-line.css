@@ -1,0 +1,186 @@
+main {
+    padding: 0;
+}
+/***************************************************
+******************** TIME-LINE *********************
+***************************************************/
+#time-line {
+    width: 100%;
+    margin-bottom: 25px;
+    margin-top: 90px;
+}
+
+
+/*********** LINHA DA TIMELINE ***********/
+#linha {
+    margin-left: 50%; /* COLOCA A LINHA NO CENTRO */
+    margin-bottom: -2400px; /* RECUA A LINHA NO MESMO VALOR DO SEU TAMANHO, PARA QUE ELA FIQUE SOBRE OS OUTROS CONTEÚDOS */
+    margin-top: 90px;
+    background-color: #999;
+    width: 1px; /* ESPESSURA DA LINHA */
+    height: 2400px; /* TAMANHO DA LINHA */
+    transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO SUAVE QUANDO OCORRE O MEDIAQUERY */
+}
+
+/*********** BOLINHA ***********/
+.bolinha { 
+  margin-top: 150px; /* DISTANCIA DA BOLINHA DO TOPO */
+  background: #828282;
+  margin-left: 49.5%; /* CENTRALIZA A BOLINHA EM CIMA DA LINHA */
+  border-radius: 100%; /* EFEITO PRA TODAR UM QUADRADO NUMA BOLINHA */
+  height: 15px;
+  width: 15px;
+  transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO SUAVE QUANDO OCORRE O MEDIAQUERY */
+}
+
+/***************************************************
+********************* CONTEÚDOS ********************
+***************************************************/
+#fundo {
+    background: url("../img/fundo-timeline.png") no-repeat fixed center / cover; /* COLOCA A IMAGEM DE FUNDO FIXA NA PÁGINA */
+}
+
+.sociologos {
+    height: 600px; /* TAMANHO DA ALTURA DA DIV DO CONTÉUDO */
+    margin: 50px;
+}
+
+.sociologos-conteudo {
+    margin-top: -250px; /* RECUA O CONTEUDO PARA O TOPO */
+    display: flex;
+    width: 100%;
+    justify-content:space-around; /* SEPARA A IMAGEM DO TEXTO COM ESPAÇO EM VOLTA */
+    align-items: center; /* CENTRALIZA OS ITENS */
+    filter: blur(3px); /* DESFOCA OS CONTEÚDOS */
+    z-index: 0; /* COLOCA O CONTEÚDO NO INDEX=0 ABAIXO DO MENU QUE É INDEX=1 */
+    transition: all 0.3s ease-in-out;
+}
+
+.nomes {
+    margin-left: 30%; /* POSIÇÃO DO NOME DO SOCIOLOGO EM RELAÇÃO À IMAGEM */
+    margin-top: -25px; /* POSIÇÃO DO NOME DO SOCIOLOGO EM RELAÇÃO À IMAGEM */
+    font-size: 35px; /* TAMANHO DA FONTE */
+    transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
+}
+
+.sociologos-conteudo img {
+        transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
+    }
+
+.sociologos-conteudo ul {
+    list-style: none; /* TIRA O ESTILO DA LISTA (OS PONTINHOS)*/
+    display: flex;
+    height: 444px; /* ALTURA DO ESPAÇO PARA O CONTEÚDO */
+    text-align: center; /* CENTRALIZA O TEXTO */
+}
+
+.sociologos-conteudo ul li {
+    width: 100%;
+}
+
+.sociologos-conteudo ul li p {
+    padding: 70px; /* CRIA UM ESPAÇO INTERNO NA DIV */
+    font-size: 17px; /* TAMANHO DA FONTE */
+    transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
+}
+
+.geral-sociologos:hover .bolinha {
+    background: #A52A2A; /* MUDA COR DA BOLINHA QUANDO PASSA O MOUSE POR CIMA DO CONTEÚDO */
+}
+
+.geral-sociologos:hover .sociologos-conteudo {
+    filter: none; /* TIRA O EFEITO DE DESFOQUE DO CONTEÚDO QUANDO PASSA O MOUSE */
+    transition: all 0.3s; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
+}
+
+.titulo {
+    transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
+}
+
+.geral-sociologos:hover .titulo{
+    transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
+}
+
+.geral-sociologos:hover .nomes{
+    font-size: 39px; /* AUMENTA O TAMANHO DO NOME DO SOCIOLOGO QUANDO PASSA O MOUSE NO CONTEÚDO */
+    transition: all 0.6s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
+}
+
+/*****************************************************************************************
+********** MEDIA QUERY 960 (Tablets em formato paisagem e monitores antigos) *************
+******************************************************************************************/
+@media (max-width:960px) {
+    #linha {
+        margin-left: 25px; /* AJUSTA A LINHA PARA O LADO ESQUEDO DA TELA QUANDO DIMINUE A TELA */
+        margin-bottom: -2380px; /* AJUSTA O TAMANHO DA LINHA */
+        height: 2380px; /* AJUSTA O TAMANHO DA LINHA */
+    }
+    
+    .sociologos-conteudo {
+         filter: none;
+    }
+    
+    .bolinha {
+        margin-left: 18px; /* POSICINA A BOLINHA NO LADO ESQUERDO DA TELA */
+    }
+    
+    .sociologos {
+        height: 650px; /* DIMINUE O TAMANHO DA ÁREA DO CONTEÚDO */
+        margin: 5px;
+        margin-left: 40px; /* AJUSTA A MARGEM ESQUERDA DO CONTEÚDO */
+    }
+       
+    .sociologos-conteudo ul li p {
+        padding: 150px 0 0 0; /* AJUSTA O ESPAÇO INTERNO DO TEXTO */
+        transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
+    }
+    
+    .geral-sociologos:hover .nomes {
+        font-size: 1.3em; /* AUMENTA UM POUCO O NOME DOS SOCIOLOGOS QUANDO PASSA O MOUSE POR CIMA DO CONTEÚDO */
+    }
+    
+    .sociologos-conteudo img {
+        width: 80%; /* AJUSTA A IMAGEM PARA 80% EM RELAÇÃO AO ESPAÇO DA DIV */
+        padding-top: 20px; /* CRIA UM ESPAÇO INTERNO NA PARTE DE CIMA DA IMAGEM */
+        transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
+    }
+    
+}
+
+/*****************************************************************************************
+******************* MEDIA QUERY 768 (Tablets em formato retrato) *************************
+******************************************************************************************/
+@media (max-width:768px) {
+    .sociologos-conteudo ul li p {
+        padding: 80px 0 0 0; /* AJUSTA O ESPAÇO INTERNO DO TEXTO */
+        transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
+    }
+    
+    .sociologos-conteudo {
+         filter: none; /* TIRA A OPACIDADE PARA DISPOSITIVOS MÓVEIS */
+    }
+    
+    .sociologos-conteudo img {
+        padding-top: 50px; /* AJUSTA O ESPAÇO INTERNO NA PARTE DE CIMA DA IMAGEM */
+        transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
+    }
+}
+
+/*****************************************************************************************
+*************** MEDIA QUERY 480 (Smartphones em formato paisagem) ************************
+******************************************************************************************/
+@media (max-width:480px) {
+    .sociologos-conteudo ul li p {
+        padding: 0 5px 0 0; /* AJUSTA O ESPAÇO INTERNO DO TEXTO */
+        transition: all 0.3s ease-in-out; /* EFEITO DE TRANSIÇÃO QUANDO MUDA O CONTEÚDO */
+    }
+    
+    .sociologos-conteudo {
+         filter: none; /* TIRA A OPACIDADE PARA DISPOSITIVOS MÓVEIS */
+    }
+    
+    .bolinha {
+        margin-top: 200px; /* AJUSTA A MARGEM DA BOLINHA */ 
+    }
+}
+
