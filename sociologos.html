@@ -13,21 +13,32 @@
       
     <!-- DIV PARA COLOCAR A IMGEM DE FUNDO NO CSS -->  
     <div id="fundo">
-     <header>
-      <!-- Barra de navegação com Menu -->
-      <nav class="menu-principal">
-      <!-- LOGO -->
-      <h1 class="logo">Sociologia</h1>
+        <header>
+        <!-- Barra de navegação com Menu -->
+            <nav class="menu-principal">
+            
+                <input type="checkbox" id="botao-menu">
+                <label for="botao-menu">&#9776;</label>
+            
+                <!-- LOGO -->
+                <h1 class="logo">Sociologia</h1>
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="sociologos.html">Sociólogos</a></li>
-            <li><a href="#">LINK 04</a></li>
-            <li><a href="#">LINK 05</a></li>
-        </ul>
-      </nav>
-      <!-- Fim da barra de navegação -->
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a id="link-sociologos" href="sociologos.html">Sociólogos</a>
+                        <ul>
+                           <li><a href="sociologos.html#auguste-comte">Auguste Comte</a></li>
+                           <li><a href="sociologos.html#karl-marx">Karl Marx</a></li>
+                           <li><a href="sociologos.html#emile-durkheim">Émile Durkheim</a></li>
+                           <li><a href="sociologos.html#max-weber">Max Weber</a></li> 
+                        </ul>
+                    </li>
+                    <li><a href="#">LINK 04</a></li>
+                    <li><a href="#">LINK 05</a></li>
+                </ul>
+            </nav>
+    <!-- Fim da barra de navegação -->
     </header>
       
       
@@ -50,19 +61,20 @@
                     <section class="sociologos">
                         
                         <!-- DIV PARA OS CONTEÚDOS (IMAGEM E TEXTOS) -->
-                        <div class="sociologos-conteudo">
+                        <div id="auguste-comte" class="sociologos-conteudo">
                             <ul>
                                 <!-- IMAGEM E TÍTULO -->
                                 <li>
-                                    <img src="img/durkheim-timeline.png">
-                                    <h1 class="nomes">WELLYSON MARTINS</h1>
+                                    <img src="img/timeline-auguste-comte.png">
+                                    <h1 class="nomes">Auguste Comte <span>(1798-1857)</span></h1>
                                 </li>
                                 
                                 <!-- TEXTO SOBRE O SOCIOLOGO -->
                                 <li>
-                                    <article class="titulo">            
+                                    <article class="texto">            
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in dui tortor. Sed non ipsum neque. Nullam congue mauris feugiat tellus efficitur laoreet. Fusce sed blandit mauris. Etiam ipsum tellus, placerat sit amet tempor ac, laoreet ac purus. Vivamus vel odio id nunc aliquam venenatis et a nulla. Ut maximus maximus tristique. Phasellus feugiat quis leo nec egestas. Quisque libero elit, volutpat ac auctor tristique, volutpat sit amet sapien. Nullam accumsan quam eleifend erat convallis, at dignissim quam volutpat. Cras consequat gravida varius. 
+                                            Vítima de um câncer, desde a sua fase de criança já exibia seus dotes intelectuais, fez seus primeiros estudos na instituição de “Monte Cler”, França aos 16 anos em 1814 devido ao seu interesse pelas ciências naturais e questões históricos sociais, ingressou na escola politécnica de Paris, onde estudou matemática e ciência. Foi expulso em 1816 por ter se rebelado contra um professor, durante sua vida sofreu crises mentais e depressões psíquicas, sua trajetória de vida vai de 1798 a 1857. 
+                                            <br><br><a id="leia-mais" href="#auguste-comte">Leia mais &#43;</a>
                                        </p>
                                     </article>
                                 </li>
@@ -79,21 +91,22 @@
                     <section class="sociologos">
                         
                         <!-- DIV PARA OS CONTEÚDOS (IMAGEM E TEXTOS) -->
-                        <div class="sociologos-conteudo">
+                        <div id="karl-marx" class="sociologos-conteudo">
                             <ul>
                                 <!-- TEXTO SOBRE O SOCIOLOGO -->
                                 <li>
-                                    <article class="titulo">            
+                                    <article class="texto">            
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in dui tortor. Sed non ipsum neque. Nullam congue mauris feugiat tellus efficitur laoreet. Fusce sed blandit mauris. Etiam ipsum tellus, placerat sit amet tempor ac, laoreet ac purus. Vivamus vel odio id nunc aliquam venenatis et a nulla. Ut maximus maximus tristique. Phasellus feugiat quis leo nec egestas. Quisque libero elit, volutpat ac auctor tristique, volutpat sit amet sapien. Nullam accumsan quam ele
+                                            Idealizador de uma sociedade com uma distribuição de renda justa e equilibrada, o economista, cientista social e revolucionário socialista alemão Karl Heinrich Marx, nasceu na data de 05 de maio de 1818, cursou Filosofia, Direito e História nas Universidades de Bonn e Berlim e foi um dos seguidores das ideias de Hegel. Um filósofo, sociólogo, jornalista e revolucionário socialista. Nascido na Prússia, ele mais tarde se tornou apátrida e passou grande parte de sua vida em Londres, no Reino Unido.
+                                            <br><br><a id="leia-mais" href="#karl-marx">Leia mais &#43;</a>
                                        </p>
                                     </article>
                                 </li>
                                 
                                 <!-- IMAGEM E TÍTULO -->
                                 <li>
-                                    <img src="img/durkheim-timeline02.png">
-                                    <h1 class="nomes">GUSTAVO HENRIQUE</h1>
+                                    <img src="img/timeline-karl-marx.png">
+                                    <h1 class="nomes">Karl Marx <span>(1818-1883)</span></h1>
                                 </li>
                             </ul>
                         </div>
@@ -108,19 +121,20 @@
                     <section class="sociologos">
                         
                         <!-- DIV PARA OS CONTEÚDOS (IMAGEM E TEXTOS) -->
-                        <div class="sociologos-conteudo">
+                        <div id="emile-durkheim" class="sociologos-conteudo">
                             <ul>
                                 <!-- IMAGEM E TÍTULO -->
                                 <li>
-                                    <img src="img/durkheim-timeline03.png">
-                                    <h1 class="nomes">WESLLEN ALVES</h1>
+                                    <img src="img/timeline-emile-durkheim.png">
+                                    <h1 class="nomes">Émile Durkheim <span>(1858-1919)</span></h1>
                                 </li>
                                 
                                 <!-- TEXTO SOBRE O SOCIOLOGO -->
                                 <li>
-                                    <article class="titulo">            
+                                    <article class="texto">            
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in dui tortor. Sed non ipsum neque. Nullam congue mauris feugiat tellus efficitur laoreet. Fusce sed blandit mauris. Etiam ipsum tellus, placerat sit amet tempor ac, laoreet ac purus. Vivamus vel odio id nunc aliquam venenatis et a nulla. Ut maximus maximus tristique. Phasellus feugiat quis leo nec egestas. Quisque libero elit, volutpat ac auctor tristique, volutpat sit amet sapien. Nullam accumsan quam eleifend erat convallis, at dignissim quam volutpat. Cras consequat gravida varius. 
+                                            Émile Durkheim nasceu na França em 1858 e vivei até 1917. Foi influenciado pelo positivismo de Auguste Comte e se dedicou em criar uma forma de entender os comportamentos coletivos. Durkheim afirma que a sociedade influencia diretamente o individuo, classificando-o como fato social e que pode ser considerado um objetivo científico. Uma de suas obras foi O Suicídio, no qual ele diz que “o suicídio é um fenômeno que não age unicamente sob o indivíduo, mas cujas forças encontram-se atuantes em todo o corpo social”.
+                                            <br><br><a id="leia-mais" href="#emile-durkheim">Leia mais &#43;</a>
                                        </p>
                                     </article>
                                 </li>
@@ -137,21 +151,22 @@
                     <section class="sociologos">
                         
                         <!-- DIV PARA OS CONTEÚDOS (IMAGEM E TEXTOS) -->
-                        <div class="sociologos-conteudo">
+                        <div id="max-weber" class="sociologos-conteudo">
                             <ul>
                                 <!-- TEXTO SOBRE O SOCIOLOGO -->
                                 <li>
-                                    <article class="titulo">            
+                                    <article class="texto">            
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in dui tortor. Sed non ipsum neque. Nullam congue mauris feugiat tellus efficitur laoreet. Fusce sed blandit mauris. Etiam ipsum tellus, placerat sit amet tempor ac, laoreet ac purus. Vivamus vel odio id nunc aliquam venenatis et a nulla. Ut maximus maximus tristique. Phasellus feugiat quis leo nec egestas. Quisque libero elit, volutpat ac auctor tristique, volutpat sit amet sapien. Nullam accumsan quam eleifend erat convallis, at dignissim quam volutpat. Cras consequat gravida varius. 
+                                            Max Weber nasceu em 21 de Abril de 1864 em Erfurt na Alemanha e viveu até 14 de junho de 1920 em Munique. Ensinou economia nas universidades de Freiburg e Heidelberg. Foi um dos integrantes da comissão que redigiu a Constituição da República de Weimar. Foi diretor por muito tempo da revista Arquivo de Ciências Sociais e Política Social, além de, colaborador do Jornal de Frankfurt. 
+                                            <br><br><a id="leia-mais" href="#max-weber">Leia mais &#43;</a>
                                        </p>
                                     </article>
                                 </li>
                                 
                                 <!-- IMAGEM E TÍTULO -->
                                 <li>
-                                    <img src="img/durkheim-timeline04.png">
-                                    <h1 class="nomes">RAFAEL MELO</h1>
+                                    <img src="img/timeline-max-weber.png">
+                                    <h1 class="nomes">Max Weber <span>(1864-1920)</span></h1>
                                 </li>
                             </ul>
                         </div>

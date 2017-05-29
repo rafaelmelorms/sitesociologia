@@ -17,13 +17,24 @@
     <header>
         <!-- Barra de navegação com Menu -->
         <nav class="menu-principal">
+
+            <input type="checkbox" id="botao-menu">
+            <label for="botao-menu">&#9776;</label>
+
             <!-- LOGO -->
             <h1 class="logo">Sociologia</h1>
 
-            <ul>
+            <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Sobre</a></li>
-                <li><a href="sociologos.html">Sociólogos</a></li>
+                <li><a id="link-sociologos" href="sociologos.html">Sociólogos</a>
+                    <ul>
+                       <li><a href="sociologos.html#auguste-comte">Auguste Comte</a></li>
+                       <li><a href="sociologos.html#karl-marx">Karl Marx</a></li>
+                       <li><a href="sociologos.html#emile-durkheim">Émile Durkheim</a></li>
+                       <li><a href="sociologos.html#max-weber">Max Weber</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">LINK 04</a></li>
                 <li><a href="#">LINK 05</a></li>
             </ul>
