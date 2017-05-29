@@ -145,9 +145,8 @@ header .banner {
  ----------------------------- */
 
 .painel-lateral {
-  width: 35%;
+  width: 470px;
   height: 210px;
-  min-width: 470px;
   padding: 20px 0px 0px 30px;
   background: rgba(0, 0, 0, 0.6);
 }
@@ -163,7 +162,7 @@ header .banner {
   font-family: 'Josefin Slab', serif;
 }
 
-.painel-lateral a { color: lightblue; padding: 10px;}
+.painel-lateral a { color: lightblue; padding: 10px; }
 
 /* -----------------------------------------------
     html, body (configuração para footer fixo)
@@ -402,43 +401,73 @@ main .container-read-more .ativador:checked ~ .expandir:after { content: "\f146"
 /*****************************************************************************************
 ********** MEDIA QUERY 960 (Tablets em formato paisagem e monitores antigos) *************
 ******************************************************************************************/
-@media (max-width:960px) {
+@media only screen and (max-width:960px) {
     label[for="botao-menu"] {
         display: block;
     }
-    
+
     .menu-principal ul {
         margin-top: 50px;
         position: absolute;
         flex-direction: column;
     }
-    
+
     #menu {
         left: -150%;
         transition: all 0.7s;
     }
-    
+
     #botao-menu:checked ~ #menu {
         left: 0;
         transition: all 0.7s;
     }
-    
+
     .menu-principal ul li {
         background-color: rgba(25, 25, 25, 0.8);
         width: 200px;
     }
-    
+
     .menu-principal {
     background: black;
     transition: all 0.7s;
     }
-    
+
     .menu-principal ul ul {
     display: none;
     }
-    
+
     .menu-principal ul a:hover {
     border-bottom: none;
     }
-    
+
+    /**************** Banner para dispositivos móveis *******************/
+    header .banner {
+      background: url("../img/hero-image-sociologia-mobile.jpg") no-repeat left center / cover;
+    }
+
+    .painel-lateral { width: 500px; font-size: 0.97em; height: 220px;}
+
+    main {justify-content: space-around;}
+}
+
+/*****************************************************************************************
+************ MEDIA QUERY 686 (Breakpoint para telas menores de smartphones) **************
+******************************************************************************************/
+
+@media only screen and (max-width:686px) {
+  .painel-lateral { width: 100%; height: 200px;}
+  .painel-lateral p { font-size: 0.9em;}
+  .painel-lateral a { font-size: 0.9em;}
+
+  main { justify-content: center; }
+  main .content-container { width: 70%;}
+  main .container-read-more .ativador:checked ~ p { height: 260px; }
+}
+
+
+/*****************************************************************************************
+*********** MEDIA QUERY ESPECÍFICO (Breakpoint para problema com "leia mais") ************
+******************************************************************************************/
+@media only screen and (max-width:535px) {
+  main .container-read-more .ativador:checked ~ p { height: 400px; }
 }
