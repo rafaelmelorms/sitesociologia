@@ -234,6 +234,7 @@ main .container-read-more {
 
 main .container-read-more h1 {
   color: #353638;
+  width: 100%;
   font-size: 1.5em;
   text-align: center;
   padding: 0 0 15px 0;
@@ -246,6 +247,7 @@ main .container-read-more p {
   text-align: center;
   position: relative;
   overflow: hidden;
+  width: 100%;
   height: 132px;
   -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
@@ -499,5 +501,6 @@ main .container-read-more .ativador:checked ~ .expandir:after { content: "\f146"
 *********** MEDIA QUERY ESPECÍFICO (Breakpoint para problema com "leia mais") ************
 ******************************************************************************************/
 @media only screen and (max-width:535px) {
-  main .container-read-more .ativador:checked ~ p { height: 400px; }
+  main { padding: 60px 0 20px 0; flex-direction: column; align-items: center;}
+  main .container-read-more .ativador:checked ~ p { height: 300px; }
 }
