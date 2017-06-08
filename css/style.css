@@ -30,7 +30,6 @@
 /* ==================== MENU (NAV) ====================*/
 /* ======= LOGO ======= */
 .menu-principal .logo {
-  color: #fff;
   width: 150px;
   height: 40px;
   display: block;
@@ -41,6 +40,7 @@
   background: url("../img/logo-sociologia.png") no-repeat left / 40px;
 }
 
+.menu-principal .logo a { color: #fff; }
 
 /* ====== NAVEGAÇÃO - MENU PRINCIPAL ====== */
 .menu-principal {
@@ -114,10 +114,7 @@ label[for="botao-menu"] {
     display: none;
 }
 
-#botao-menu {
-    display: none;
-}
-
+#botao-menu { display: none; }
 
 /* ==================== CABEÇALHO (HEADER) ====================*/
 
@@ -135,7 +132,7 @@ header .banner {
   height: 550px;
   display: flex;
   align-items: flex-end;
-  background: url("../img/hero-image-sociologia.jpg") no-repeat fixed left center / cover;
+  background: url("../img/banner-sociologia.jpg") no-repeat fixed bottom center / cover;
 }
 
 /* -----------------------------
@@ -328,9 +325,7 @@ main .container-read-more .ativador:checked ~ .expandir:after { content: "\f146"
   padding-bottom: 25px;
 }
 
-.rodape a {
-  color: #fff;
-}
+.rodape a { color: #fff; }
 
 /* ======================================
   ************ ANIMAÇÕES ***************
@@ -460,22 +455,15 @@ main .container-read-more .ativador:checked ~ .expandir:after { content: "\f146"
     }
 
     .menu-principal {
-    background: black;
-    transition: all 0.7s;
+      background: black;
+      transition: all 0.7s;
     }
 
-    .menu-principal ul ul {
-    display: none;
-    }
+    .menu-principal ul ul { display: none; }
 
-    .menu-principal ul a:hover {
-    border-bottom: none;
-    }
+    .menu-principal ul a:hover { border-bottom: none;}
 
     /**************** Banner para dispositivos móveis *******************/
-    header .banner {
-      background: url("../img/hero-image-sociologia-mobile.jpg") no-repeat left center / cover;
-    }
 
     .painel-lateral { width: 500px; font-size: 0.97em; height: 220px;}
 
