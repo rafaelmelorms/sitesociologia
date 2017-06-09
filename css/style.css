@@ -419,7 +419,7 @@ main .container-read-more .ativador:checked ~ .expandir:after { content: "\f146"
         height: 6px;
         position: absolute;
         background-color: #fff;
-        top: 50%;
+        top: 75%;
         transform: translateY(-50%);
         -webkit-transition: all .5s ease;
                 transition: all .5s ease;
@@ -445,7 +445,7 @@ main .container-read-more .ativador:checked ~ .expandir:after { content: "\f146"
     #botao-menu:checked ~ label[for="botao-menu"] .menu-icon:after{ top: 0; transform: rotate(-225deg); }
 
     .menu-principal ul {
-        margin-top: 50px;
+        margin-top: 70px;
         position: absolute;
         flex-direction: column;
     }
