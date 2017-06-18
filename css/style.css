@@ -178,7 +178,7 @@ header .bannerEstado {
 }
 
 header .bannerFamilia {
-    background: url("../img/banner-instituicoes-familia.jpg") no-repeat fixed bottom center / cover;
+    background: url("../img/banner-instituicoes-familia.jpeg") no-repeat fixed top center / cover;
 }
 
 header .bannerIgreja {
