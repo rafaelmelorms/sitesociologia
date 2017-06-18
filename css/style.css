@@ -250,7 +250,7 @@ header .bannerSocialismo {
   font-family: 'Josefin Slab', serif;
 }
 
-.painel-lateral a { color: lightblue; padding: 10px; }
+.painel-lateral a { color: cornflowerblue; padding: 10px; }
 
 /* -----------------------------------------------
     html, body (configuração para footer fixo)
@@ -331,6 +331,15 @@ main .container-read-more h1 {
   text-align: center;
   padding: 0 0 15px 0;
   font-family: 'Josefin Slab', serif;
+}
+
+.link-conteudo {
+  color: black; padding: 10px;
+  font-family: 'Josefin Slab', serif
+}
+
+.link-conteudo:hover {
+    color: #A52A2A; 
 }
 
 main .container-read-more p {
