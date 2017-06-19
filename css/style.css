@@ -1,4 +1,4 @@
-/* ------------ Importando fontes Google Fontes ------------------*/
+﻿/* ------------ Importando fontes Google Fontes ------------------*/
 
 @font-face {
   font-family: "Roboto";
@@ -166,7 +166,7 @@ header .bannerGrupos {
 }
 
 header .bannerInstituicoes {
-    background: url("../img/banner-instituicoes.jpg") no-repeat fixed bottom center / cover;
+    background: url("../img/banner-instituicoes.png") no-repeat fixed bottom center / cover;
 }
 
 header .bannerEscola {
