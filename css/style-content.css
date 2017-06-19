@@ -20,11 +20,11 @@ main article {
 }
 
 main article p {
+  text-indent: 47.24409px;
   padding: 0 0 20px 0;
   text-align: justify;
   font-family: "Lora";
-  font-weight: 100;
   font-size: 1.05em;
+  font-weight: 100;
   color: #333;
-  text-indent: 47.24409px;
 }
