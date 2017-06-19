@@ -145,6 +145,12 @@ header .banner, .bannerConceito, .bannerDesigualdade, .bannerEstratificacao, .ba
   align-items: flex-end;
 }
 
+.bannerConceito, .bannerDesigualdade, .bannerEstratificacao, .bannerGrupos, .bannerInstituicoes, .bannerEscola, .bannerEstado, .bannerFamilia, .bannerIgreja, .bannerSociedade, .bannerAcaoSocial, .bannerAugusteComte, .bannerCapitalismo, .bannerEmileDurkheim, .bannerFatosSociais, .bannerKarlMarx, .bannerMaxWeber, .bannerPositivismo, .bannerSocialismo {
+  -webkit-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
 header .banner {
     background: url("../img/banner-sociologia.jpg") no-repeat fixed bottom center / cover;
 }
