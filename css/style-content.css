@@ -28,3 +28,17 @@ main article p {
   font-weight: 100;
   color: #333;
 }
+
+/*****************************************************************************************
+**** MEDIA QUERY ESPECÍFICO (Breakpoint para telas menores que de monitores quadrados ****
+******************************************************************************************/
+@media only screen and (max-width: 800px) {
+  .painel-lateral h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  main article {
+    padding: 50px 30px 50px 30px;
+  }
+}
