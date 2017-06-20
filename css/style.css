@@ -1,4 +1,4 @@
-﻿/* ------------ Importando fontes Google Fontes ------------------*/
+/* ------------ Importando fontes Google Fontes ------------------*/
 
 @font-face {
   font-family: "Roboto";
@@ -152,35 +152,35 @@ header .banner, .bannerConceito, .bannerDesigualdade, .bannerEstratificacao, .ba
 }
 
 header .banner {
-    background: url("../img/banner-sociologia.jpg") no-repeat fixed bottom center / cover;
+    background: url("../img/banner-sociologia.jpg") no-repeat fixed top center / cover;
 }
 
 header .bannerConceito {
-    background: url("../img/banner-conceito.jpg") no-repeat fixed bottom center / cover;
+    background: url("../img/banner-conceito.jpg") no-repeat fixed top center / cover;
 }
 
 header .bannerDesigualdade {
-    background: url("../img/banner-desigualdade-social.jpg") no-repeat fixed bottom center / cover;
+    background: url("../img/banner-desigualdade-social.jpg") no-repeat fixed top center / cover;
 }
 
 header .bannerEstratificacao {
-    background: url("../img/banner-estratificacao-social.jpg") no-repeat fixed bottom center / cover;
+    background: url("../img/banner-estratificacao-social.jpg") no-repeat fixed top center / cover;
 }
 
 header .bannerGrupos {
-    background: url("../img/banner-grupos-sociais.jpg") no-repeat fixed bottom center / cover;
+    background: url("../img/banner-grupos-sociais.jpg") no-repeat fixed top center / cover;
 }
 
 header .bannerInstituicoes {
-    background: url("../img/banner-instituicoes.png") no-repeat fixed bottom center / cover;
+    background: url("../img/banner-instituicoes.png") no-repeat fixed top center / cover;
 }
 
 header .bannerEscola {
-    background: url("../img/banner-instituicoes-escola.jpg") no-repeat fixed bottom center / cover;
+    background: url("../img/banner-instituicoes-escola.jpg") no-repeat fixed top center / cover;
 }
 
 header .bannerEstado {
-    background: url("../img/banner-instituicoes-estado.jpg") no-repeat fixed bottom center / cover;
+    background: url("../img/banner-instituicoes-estado.jpg") no-repeat fixed top center / cover;
 }
 
 header .bannerFamilia {
@@ -188,23 +188,23 @@ header .bannerFamilia {
 }
 
 header .bannerIgreja {
-    background: url("../img/banner-instituicoes-igreja.jpg") no-repeat fixed bottom center / cover;
+    background: url("../img/banner-instituicoes-igreja.jpg") no-repeat fixed top center / cover;
 }
 
 header .bannerSociedade {
-    background: url("../img/banner-sociedade.jpg") no-repeat fixed bottom center / cover;
+    background: url("../img/banner-sociedade.jpg") no-repeat fixed top center / cover;
 }
 
 header .bannerAcaoSocial {
-    background: url("../img/banner-sociologos-acao-social.jpg") no-repeat fixed bottom center / cover;
+    background: url("../img/banner-sociologos-acao-social.jpg") no-repeat fixed top center / cover;
 }
 
 header .bannerAugusteComte {
-    background: url("../img/banner-sociologos-auguste-comte.jpg") no-repeat fixed bottom center / cover;
+    background: url("../img/banner-sociologos-auguste-comte.jpg") no-repeat fixed top center / cover;
 }
 
 header .bannerCapitalismo {
-    background: url("../img/banner-sociologos-capitalismo.jpg") no-repeat fixed bottom center / cover;
+    background: url("../img/banner-sociologos-capitalismo.jpg") no-repeat fixed top center / cover;
 }
 
 header .bannerEmileDurkheim {
@@ -212,23 +212,23 @@ header .bannerEmileDurkheim {
 }
 
 header .bannerFatosSociais {
-    background: url("../img/banner-sociologos-fatos-sociais.jpg") no-repeat fixed bottom center / cover;
+    background: url("../img/banner-sociologos-fatos-sociais.jpg") no-repeat fixed top center / cover;
 }
 
 header .bannerKarlMarx {
-    background: url("../img/banner-sociologos-karl-marx.jpg") no-repeat fixed bottom center / cover;
+    background: url("../img/banner-sociologos-karl-marx.jpg") no-repeat fixed top center / cover;
 }
 
 header .bannerMaxWeber {
-    background: url("../img/banner-sociologos-max-weber.jpg") no-repeat fixed bottom center / cover;
+    background: url("../img/banner-sociologos-max-weber.jpg") no-repeat fixed top center / cover;
 }
 
 header .bannerPositivismo {
-    background: url("../img/banner-sociologos-positivismo.jpg") no-repeat fixed bottom center / cover;
+    background: url("../img/banner-sociologos-positivismo.jpg") no-repeat fixed top center / cover;
 }
 
 header .bannerSocialismo {
-    background: url("../img/banner-sociologos-socialismo.jpg") no-repeat fixed bottom center / cover;
+    background: url("../img/banner-sociologos-socialismo.jpg") no-repeat fixed top center / cover;
 }
 
 
