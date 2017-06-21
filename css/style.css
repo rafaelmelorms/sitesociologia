@@ -107,7 +107,7 @@
     position: absolute;
     margin-left: 125px;
     top: 0px;
-    visibility: hidden;
+    visibility: hidden; 
 }
 
 .menu-principal ul li:hover ul, .menu-principal ul ul li:hover li {
@@ -160,7 +160,7 @@ header .bannerConceito {
 }
 
 header .bannerDesigualdade {
-    background: url("../img/banner-desigualdade-social.jpg") no-repeat fixed top center / cover;
+    background: url("../img/banner-desigualdade-social.jpg") no-repeat fixed bottom center / cover;
 }
 
 header .bannerEstratificacao {
