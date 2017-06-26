@@ -138,14 +138,14 @@ header {
       |- Banner
  ----------------------------- */
 
-header .banner, .bannerConceito, .bannerDesigualdade, .bannerEstratificacao, .bannerGrupos, .bannerInstituicoes, .bannerEscola, .bannerEstado, .bannerFamilia, .bannerIgreja, .bannerSociedade, .bannerAcaoSocial, .bannerAugusteComte, .bannerCapitalismo, .bannerEmileDurkheim, .bannerFatosSociais, .bannerKarlMarx, .bannerMaxWeber, .bannerPositivismo, .bannerSocialismo {
+header .banner, .bannerSobre, .bannerConceito, .bannerDesigualdade, .bannerEstratificacao, .bannerGrupos, .bannerInstituicoes, .bannerEscola, .bannerEstado, .bannerFamilia, .bannerIgreja, .bannerSociedade, .bannerAcaoSocial, .bannerAugusteComte, .bannerCapitalismo, .bannerEmileDurkheim, .bannerFatosSociais, .bannerKarlMarx, .bannerMaxWeber, .bannerPositivismo, .bannerSocialismo {
   width: 100%;
   height: 550px;
   display: flex;
   align-items: flex-end;
 }
 
-.bannerConceito, .bannerDesigualdade, .bannerEstratificacao, .bannerGrupos, .bannerInstituicoes, .bannerEscola, .bannerEstado, .bannerFamilia, .bannerIgreja, .bannerSociedade, .bannerAcaoSocial, .bannerAugusteComte, .bannerCapitalismo, .bannerEmileDurkheim, .bannerFatosSociais, .bannerKarlMarx, .bannerMaxWeber, .bannerPositivismo, .bannerSocialismo {
+.bannerSobre, .bannerConceito, .bannerDesigualdade, .bannerEstratificacao, .bannerGrupos, .bannerInstituicoes, .bannerEscola, .bannerEstado, .bannerFamilia, .bannerIgreja, .bannerSociedade, .bannerAcaoSocial, .bannerAugusteComte, .bannerCapitalismo, .bannerEmileDurkheim, .bannerFatosSociais, .bannerKarlMarx, .bannerMaxWeber, .bannerPositivismo, .bannerSocialismo {
   -webkit-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -153,6 +153,10 @@ header .banner, .bannerConceito, .bannerDesigualdade, .bannerEstratificacao, .ba
 
 header .banner {
     background: url("../img/banner-sociologia.jpg") no-repeat fixed top center / cover;
+}
+
+header .bannerSobre {
+    background: url("../img/banner-sobre.jpg") no-repeat fixed top center / cover;
 }
 
 header .bannerConceito {
@@ -319,6 +323,20 @@ main {
   flex-wrap: wrap;
   padding: 60px 30px 20px 30px;
   justify-content: space-between;
+}
+
+main article {
+  padding: 0px 16% 50px 16%;
+}
+
+main article p {
+  text-indent: 47.24409px;
+  padding: 0 0 20px 0;
+  text-align: justify;
+  font-family: "Lora";
+  font-size: 1.2em;
+  font-weight: 100;
+  color: #333;
 }
 
 main .content-container {
