@@ -325,11 +325,11 @@ main {
   justify-content: space-between;
 }
 
-main article {
+.sobre {
   padding: 0px 16% 50px 16%;
 }
 
-main article p {
+.sobre p {
   text-indent: 47.24409px;
   padding: 0 0 20px 0;
   text-align: justify;
