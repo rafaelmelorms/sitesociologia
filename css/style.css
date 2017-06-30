@@ -529,6 +529,14 @@ main .container-read-more .ativador:checked ~ .expandir:after { content: "\f146"
    top: 42px;
   }
 }
+/*****************************************************************************************
+********** MEDIA QUERY 1400 (Telas de grandes formatos) *************
+******************************************************************************************/
+@media only screen and (min-width:1400px) {
+    header .bannerSobre {
+    background: url("../img/banner-sobre-3.jpg") no-repeat fixed top center / cover;
+    }
+}
 
 /*****************************************************************************************
 ********** MEDIA QUERY 960 (Tablets em formato paisagem e monitores antigos) *************
@@ -604,6 +612,7 @@ main .container-read-more .ativador:checked ~ .expandir:after { content: "\f146"
 
     main {justify-content: space-around;}
 }
+
 
 /*****************************************************************************************
 ************ MEDIA QUERY 686 (Breakpoint para telas menores de smartphones) **************
