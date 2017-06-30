@@ -249,12 +249,19 @@ header .bannerSocialismo {
   background: rgba(0, 0, 0, 0.6);
 }
 
-.painel-lateral h2, .painel-lateral p{
+.painel-lateral-sobre {
+  width: 200px;
+  height: 80px;
+  padding: 20px 0px 0px 30px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.painel-lateral h2, .painel-lateral p, .painel-lateral-sobre h2{
   color: #fff;
   padding: 10px;
 }
 
-.painel-lateral h2 {
+.painel-lateral h2, .painel-lateral-sobre h2 {
   font-size: 2em;
   text-transform: uppercase;
   font-family: 'Josefin Slab', serif;
