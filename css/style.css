@@ -617,7 +617,12 @@ main .container-read-more .ativador:checked ~ .expandir:after { content: "\f146"
   main { justify-content: center; }
   main .content-container { width: 70%;}
   main .container-read-more .ativador:checked ~ p { height: 260px; }
+    
+    header .bannerSobre {
+    background: url("../img/banner-sobre-2.jpg") no-repeat fixed top center / cover;
 }
+}
+
 
 
 /*****************************************************************************************
